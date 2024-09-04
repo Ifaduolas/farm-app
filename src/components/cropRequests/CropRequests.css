@@ -1,0 +1,73 @@
+.crop-requests-section {
+    padding: 20px;  /* Padding for the section */
+    background-color: #fff;  /* White background */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for effect */
+  }
+  
+  .crop-requests-list {
+    display: flex;  /* Flexbox for layout */
+    flex-wrap: wrap;  /* Wrap items */
+    gap: 20px;  /* Gap between items */
+  }
+  
+  .crop-request-card {
+    background-color: #f9f9f9;  /* Card background color */
+    padding: 15px;  /* Padding for card */
+    border-radius: 5px;  /* Rounded corners */
+    width: calc(33% - 20px);  /* Three columns */
+    box-sizing: border-box;  /* Include padding in width */
+    border: 1px solid #ddd;  /* Border color */
+  }
+  
+  .crop-requests-card p {
+    margin: 10px 0;  /* Margin between paragraphs */
+  }
+
+  .crop-request-card h3{
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;  /* Flexbox for buttons */
+    justify-content: space-between;  /* Space between buttons */
+  }
+  
+  .accept-button, .reject-button {
+    padding: 8px 12px;  /* Padding for buttons */
+    border: none;  /* Remove border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    color: #fff;  /* Text color */
+    transition: background-color 0.3s;  /* Smooth transition */
+  }
+  
+  .accept-button {
+    background-color: #27ae60;  /* Green color */
+  }
+  
+  .accept-button:hover {
+    background-color: #219150;  /* Darker green */
+  }
+  
+  .reject-button {
+    background-color: #e74c3c;  /* Red color */
+  }
+  
+  .reject-button:hover {
+    background-color: #c0392b;  /* Darker red */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .crop-request-card {
+      width: calc(50% - 20px);  /* Two columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .crop-request-card {
+      width: 100%;  /* Full width for small screens */
+    }
+  }
+  

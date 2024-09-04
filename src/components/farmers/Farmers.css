@@ -1,0 +1,74 @@
+/* Container for Farmer Component */
+.farmer-container {
+    max-width: 1000px; /* Maximum width for the container */
+    margin: 20px auto; /* Center align and margin for spacing */
+    padding: 20px; /* Padding inside the container */
+    background-color: #f5f5f5; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Title for Farmer Component */
+  .farmer-title {
+    font-size: 2rem; /* Font size for the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Margin below the title */
+  }
+  
+  /* Crop List Container */
+  .crop-list {
+    display: flex; /* Flexbox layout for crops */
+    flex-wrap: wrap; /* Wrap crops to new lines */
+    justify-content: center; /* Center-align crops */
+    gap: 20px; /* Gap between crop cards */
+  }
+  
+  /* Individual Crop Card */
+  .crop-card {
+    background-color: #fff; /* White background for crop card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    width: calc(33.33% - 40px); /* Width of each card */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: left; /* Left-align text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+  }
+  
+  /* Hover Effect for Crop Card */
+  .crop-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Remove Button Styling */
+  .remove-button {
+    background-color: #f44336; /* Red background for remove button */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the button */
+    margin-top: 10px; /* Margin at the top */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  /* Remove Button Hover Effect */
+  .remove-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .crop-card {
+      width: calc(50% - 30px); /* Two cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .crop-card {
+      width: 100%; /* One card per row on mobile */
+    }
+  }
+  

@@ -1,0 +1,48 @@
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2019/05/15/11/24/dji-4204801_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+   
+}
+.column{
+    /*float: left;*/
+    width: 33.33%;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    column-gap: 124px;
+}
+
+.column img{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 70px;
+    border: 1px solid #ffdd40;
+    object-fit: cover;
+}
+
+ .links{
+    padding-left: 140px;
+    padding-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: Rotobo, monospace;
+    font-size:25px;
+    font-weight: 800;
+}

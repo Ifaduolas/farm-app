@@ -1,0 +1,41 @@
+.crop-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .crop-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .crop-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .crop-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .order-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .order-btn:hover {
+    background-color: #218838;
+  }
+  

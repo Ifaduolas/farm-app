@@ -1,0 +1,12 @@
+.dashboard-layout {
+    display: flex; /* Flex layout to separate sidebar and content */
+    min-height: 100vh; /* Full height */
+  }
+  
+  .dashboard-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for content */
+    background-color: #f0f2f5; /* Light background */
+    overflow-y: auto; /* Scroll if content overflows */
+  }
+  

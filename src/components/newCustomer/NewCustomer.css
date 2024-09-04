@@ -1,0 +1,80 @@
+.customer-section {
+    padding: 20px;  /* Padding */
+    background-color: #fff;  /* Background color */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Box shadow */
+  }
+  
+  .add-customer-form {
+    display: flex;  /* Flexbox layout */
+    gap: 10px;  /* Gap between form elements */
+    margin-bottom: 20px;  /* Margin below form */
+  }
+  
+  .add-customer-form input {
+    padding: 10px;  /* Padding */
+    border: 1px solid #ddd;  /* Border color */
+    border-radius: 5px;  /* Rounded corners */
+    flex: 1;  /* Take up available space */
+  }
+  
+  .add-customer-form button {
+    padding: 10px 20px;  /* Padding */
+    background-color: #3498db;  /* Button background color */
+    color: #fff;  /* Button text color */
+    border: none;  /* Remove border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    transition: background-color 0.3s;  /* Smooth transition */
+  }
+  
+  .add-customer-form button:hover {
+    background-color: #2980b9;  /* Hover background color */
+  }
+  
+  .customer-list {
+    display: flex;  /* Flexbox layout */
+    flex-wrap: wrap;  /* Wrap items */
+    gap: 20px;  /* Gap between items */
+  }
+  
+  .customer-card {
+    background-color: #f9f9f9;  /* Card background color */
+    padding: 15px;  /* Padding */
+    border-radius: 5px;  /* Rounded corners */
+    width: calc(33% - 20px);  /* Width for three columns */
+    box-sizing: border-box;  /* Include padding in width */
+    border: 1px solid #ddd;  /* Border color */
+  }
+  
+  .customer-card p {
+    margin: 10px 0;  /* Margin between paragraphs */
+  }
+  
+  .customer-card button {
+    padding: 8px 12px;  /* Padding */
+    background-color: #e74c3c;  /* Button background color */
+    color: #fff;  /* Button text color */
+    border: none;  /* Remove border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    transition: background-color 0.3s;  /* Smooth transition */
+  }
+  
+  .customer-card button:hover {
+    background-color: #c0392b;  /* Hover background color */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .customer-card {
+      width: calc(50% - 20px);  /* Two columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .customer-card {
+      width: 100%;  /* Full width for small screens */
+    }
+  }
+  

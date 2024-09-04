@@ -1,0 +1,58 @@
+.supplier-container {
+    display: flex;  /* Flexbox for layout */
+    flex-direction: column;  /* Stack nav and content vertically */
+    padding: 20px;  /* Padding */
+    background-color: #f5f5f5;  /* Background color */
+    height: 100vh;  /* Full viewport height */
+    box-sizing: border-box;  /* Include padding in height */
+  }
+  
+  .supplier-nav {
+    display: flex;  /* Flexbox for nav */
+    justify-content: space-around;  /* Space around buttons */
+    margin-bottom: 20px;  /* Margin below nav */
+    background-color: #2c3e50;  /* Nav background color */
+    padding: 10px;  /* Padding */
+    border-radius: 5px;  /* Rounded corners */
+  }
+  
+  .supplier-nav button {
+    color: #fff;  /* Button text color */
+    background-color: #3498db;  /* Button background color */
+    border: none;  /* Remove border */
+    padding: 10px 20px;  /* Padding */
+    cursor: pointer;  /* Pointer cursor */
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s;  /* Smooth background color transition */
+  }
+  
+  .supplier-nav button:hover {
+    background-color: #2980b9;  /* Hover background color */
+  }
+  
+  .supplier-content {
+    flex: 1;  /* Take up remaining space */
+    background-color: #fff;  /* Background color */
+    padding: 20px;  /* Padding */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Box shadow */
+    overflow-y: auto;  /* Scrollbar for content */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .supplier-container {
+      padding: 10px;  /* Reduced padding for small screens */
+    }
+  
+    .supplier-nav {
+      flex-direction: column;  /* Stack buttons vertically */
+      align-items: center;  /* Center buttons */
+    }
+  
+    .supplier-nav button {
+      width: 100%;  /* Full width buttons */
+      margin-bottom: 10px;  /* Margin between buttons */
+    }
+  }
+  
